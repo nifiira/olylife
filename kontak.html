@@ -233,11 +233,11 @@
                     </div>
                     <div class="col-md-6">
                       <input
-                        type="date"
-                        name="date"
+                        type="text"
                         class="form-control"
-                        value="hint"
-                        required=""
+                        placeholder="Pilih Tanggal"
+                        onfocus="this.type = 'date'"
+                        onblur="if (!this.value) this.type = 'text';"
                       />
                     </div>
                     <div class="col-md-6">
